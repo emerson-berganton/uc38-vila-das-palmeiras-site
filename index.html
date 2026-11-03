@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Sobrado Vila das Palmeiras</title>
+<meta name="description" content="Sobrado de 141 m² com 3 dormitórios no Residencial Vila das Palmeiras, Americana-SP.">
+<meta property="og:title" content="Sobrado Vila das Palmeiras">
+<meta property="og:image" content="renders/01_esquina.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ---- cores e medidas (troque aqui para mudar a cara do site) ---- */
+:root{
+  --fundo:#f7f3ee; --papel:#fffdfa; --texto:#2a2622; --suave:#6f675e; --linha:#e6ddd2;
+  --destaque:#b5713f; --escuro:#1d1b19;
+  --raio:14px; --larg:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--fundo);color:var(--texto);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+.wrap{max-width:var(--larg);margin:0 auto;padding:0 20px}
+a{color:inherit}
+
+/* topo */
+.hero{position:relative;min-height:min(88vh,860px);min-height:min(88svh,860px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--escuro)}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 60%),linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,.15) 55%,rgba(0,0,0,.72) 100%)}
+.hero .ilus{position:absolute;right:16px;bottom:12px;z-index:1;font-size:11px;opacity:.75}
+.hero .wrap{position:relative;z-index:1;padding-bottom:56px;width:100%}
+.etq{display:inline-block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.16);backdrop-filter:blur(6px);padding:6px 12px;border-radius:99px;margin-bottom:18px}
+.hero h1{font-size:clamp(38px,6.5vw,76px);max-width:14ch}
+.hero p.sub{font-size:clamp(17px,2vw,21px);max-width:44ch;margin:16px 0 0;opacity:.95}
+.hero .end{font-size:14px;opacity:.85;margin-top:14px}
+.acoes{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:99px;font-weight:600;font-size:15px;text-decoration:none;border:0;cursor:pointer}
+.btn.claro{background:#fff;color:var(--texto)}
+.btn.vidro{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.45);backdrop-filter:blur(6px)}
+.btn.cheio{background:var(--destaque);color:#fff}
+.btn:hover{filter:brightness(1.06)}
+
+/* números */
+.nums{background:var(--papel);border-bottom:1px solid var(--linha)}
+.nums .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0}
+.num{padding:26px 10px;text-align:center;border-right:1px solid var(--linha)}
+.num:last-child{border-right:0}
+.num b{display:block;font-family:Fraunces,serif;font-size:30px;font-weight:600;color:var(--destaque)}
+.num span{font-size:14px;color:var(--suave)}
+
+section{padding:84px 0}
+.tit{font-size:clamp(28px,4vw,42px);margin-bottom:10px}
+.lead{color:var(--suave);max-width:60ch;margin:0 0 36px}
+
+/* destaques */
+.dest{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.card{background:var(--papel);border:1px solid var(--linha);border-radius:var(--raio);padding:24px}
+.card h3{font-size:21px;margin-bottom:8px}
+.card p{margin:0;color:var(--suave);font-size:15px}
+.card i{display:block;width:34px;height:3px;background:var(--destaque);border-radius:2px;margin-bottom:16px}
+
+/* galeria */
+.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:12px;grid-auto-flow:dense}
+.gal button{all:unset;cursor:zoom-in;position:relative;border-radius:var(--raio);overflow:hidden;background:#ddd;grid-column:span 4;aspect-ratio:4/3}
+.gal button.lg{grid-column:span 8;grid-row:span 2;aspect-ratio:auto}
+.gal button.rt{aspect-ratio:3/4}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal button:hover img{transform:scale(1.04)}
+.gal button span{position:absolute;left:0;right:0;bottom:0;padding:28px 14px 12px;color:#fff;font-size:14px;font-weight:500;background:linear-gradient(transparent,rgba(0,0,0,.6))}
+.gal button:focus-visible{outline:3px solid var(--destaque);outline-offset:2px}
+
+/* plantas */
+.abas{display:flex;gap:8px;margin-bottom:18px}
+.aba{all:unset;cursor:pointer;padding:9px 18px;border-radius:99px;border:1px solid var(--linha);background:var(--papel);font-weight:500;font-size:15px}
+.aba[aria-selected=true]{background:var(--texto);color:#fff;border-color:var(--texto)}
+.planta{background:var(--papel);border:1px solid var(--linha);border-radius:var(--raio);padding:12px;display:flex;justify-content:center}
+.planta img{max-height:80vh;width:auto;border-radius:8px;cursor:zoom-in}
+
+/* 3D */
+.tres{background:var(--escuro);color:#fff;border-radius:22px;overflow:hidden;display:grid;grid-template-columns:1.1fr 1fr;align-items:stretch}
+.tres .txt{padding:48px}
+.tres .txt p{color:rgba(255,255,255,.75);margin:12px 0 26px}
+.tres .img{min-height:280px;background:center/cover no-repeat}
+
+footer{padding:40px 0 56px;color:var(--suave);font-size:13px;border-top:1px solid var(--linha)}
+footer b{color:var(--texto)}
+
+/* tela cheia das fotos */
+.lb{position:fixed;inset:0;background:rgba(14,13,12,.96);z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.lb[hidden]{display:none}
+.lb img{max-width:94vw;max-height:80vh;object-fit:contain;border-radius:6px;user-select:none}
+.lb .leg{color:#eee;margin-top:14px;font-size:15px;text-align:center;padding:0 60px}
+.lb button{all:unset;cursor:pointer;position:absolute;color:#fff;width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.12);display:grid;place-items:center;font-size:26px}
+.lb .fe{top:16px;right:16px}.lb .an{left:16px;top:50%}.lb .pr{right:16px;top:50%}
+.lb .cont{position:absolute;top:24px;left:20px;color:#bbb;font-size:13px}
+
+@media (max-width:820px){
+  section{padding:60px 0}
+  .gal{grid-template-columns:repeat(2,1fr);gap:8px}
+  .gal button,.gal button.lg{grid-column:span 1;grid-row:auto;aspect-ratio:4/3}
+  .gal button.lg{grid-column:span 2}
+  .gal button.rt{aspect-ratio:3/4}
+  .num{border-right:0;border-bottom:1px solid var(--linha);padding:18px 10px}
+  .tres{grid-template-columns:1fr}.tres .txt{padding:30px 24px}
+  .lb .an,.lb .pr{top:auto;bottom:22px}.lb .an{left:calc(50% - 60px)}.lb .pr{right:calc(50% - 60px)}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="topo">
+  <img id="capa" alt="">
+  <span class="ilus">Imagem meramente ilustrativa</span>
+  <div class="wrap">
+    <span class="etq" data-t="etiqueta"></span>
+    <h1 data-t="titulo"></h1>
+    <p class="sub" data-t="subtitulo"></p>
+    <div class="end" data-t="endereco"></div>
+    <div class="acoes">
+      <a class="btn claro" href="#galeria">Ver fotos</a>
+      <a class="btn vidro" href="maquete.html">Maquete 3D</a>
+    </div>
+  </div>
+</header>
+
+<div class="nums"><div class="wrap" id="nums"></div></div>
+
+<section><div class="wrap">
+  <div class="dest" id="dest"></div>
+</div></section>
+
+<section id="galeria" style="padding-top:0"><div class="wrap">
+  <h2 class="tit" data-t="titulo_galeria"></h2>
+  <p class="lead">Toque em uma foto para ver em tela cheia.</p>
+  <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="plantas" style="padding-top:0"><div class="wrap">
+  <h2 class="tit" data-t="titulo_plantas"></h2>
+  <p class="lead" data-t="texto_plantas"></p>
+  <div class="abas" role="tablist" id="abas"></div>
+  <div class="planta"><img id="planta" alt=""></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="tres">
+    <div class="txt">
+      <h2 class="tit" data-t="titulo_3d"></h2>
+      <p data-t="texto_3d"></p>
+      <a class="btn cheio" href="maquete.html" data-t="botao_3d"></a>
+    </div>
+    <div class="img" id="img3d"></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <b data-t="titulo"></b> · <span data-t="endereco"></span><br>
+  <span data-t="aviso"></span>
+</div></footer>
+
+<div class="lb" id="lb" hidden>
+  <span class="cont" id="lbc"></span>
+  <button class="fe" aria-label="Fechar">✕</button>
+  <button class="an" aria-label="Anterior">‹</button>
+  <img id="lbi" alt="">
+  <div class="leg" id="lbl"></div>
+  <button class="pr" aria-label="Próxima">›</button>
+</div>
+
+<script>
+/* Lê o conteudo.txt (campo: valor) e a lista de fotos da pasta renders. Não precisa mexer aqui para trocar textos. */
+(async () => {
+  const txt = await (await fetch('conteudo.txt', {cache: 'no-cache'})).text();
+  const C = {}, L = {};
+  for (const raw of txt.split('\n')) {
+    const s = raw.trim(); if (!s || s.startsWith('#')) continue;
+    const i = s.indexOf(':'); if (i < 0) continue;
+    const k = s.slice(0, i).trim(), v = s.slice(i + 1).trim();
+    (L[k] = L[k] || []).push(v); C[k] = v;
+  }
+  const par = v => v.split('|').map(x => x.trim());
+  document.querySelectorAll('[data-t]').forEach(el => { const v = C[el.dataset.t]; if (v) el.textContent = v; else if (!el.closest('.acoes')) el.remove(); });
+  if (C.titulo) document.title = C.titulo;
+
+  const fotos = await (await fetch('renders/lista.json', {cache: 'no-cache'})).json();
+  const leg = {}; (L.legenda || []).forEach(v => { const [a, b] = par(v); leg[a] = b; });
+  const tit = f => leg[f.arquivo] || f.titulo;
+  const capa = C.foto_capa || '01_esquina.jpg';
+  document.getElementById('capa').src = 'renders/' + capa;
+
+  document.getElementById('nums').innerHTML = (L.numero || []).map(v => { const [a, b] = par(v); return `<div class="num"><b></b><span></span></div>`; }).join('');
+  document.querySelectorAll('#nums .num').forEach((el, i) => { const [a, b] = par(L.numero[i]); el.querySelector('b').textContent = a; el.querySelector('span').textContent = b || ''; });
+  const dest = document.getElementById('dest');
+  (L.destaque || []).forEach(v => { const [a, b] = par(v); const d = document.createElement('div'); d.className = 'card'; d.innerHTML = '<i></i><h3></h3><p></p>'; d.querySelector('h3').textContent = a; d.querySelector('p').textContent = b || ''; dest.appendChild(d); });
+
+  const plantas = fotos.filter(f => /^p\d/.test(f.arquivo));
+  const galeria = fotos.filter(f => !/^p\d/.test(f.arquivo));
+  const retrato = f => /^(08|10|12|14)_/.test(f.arquivo);
+  const gal = document.getElementById('gal');
+  galeria.forEach((f, i) => {
+    const b = document.createElement('button');
+    b.className = (i === 0 || i === 4 ? 'lg' : '') + (retrato(f) ? ' rt' : '');
+    b.innerHTML = `<img loading="lazy" alt=""><span></span>`;
+    b.querySelector('img').src = 'renders/' + f.arquivo; b.querySelector('img').alt = tit(f); b.querySelector('span').textContent = tit(f);
+    b.onclick = () => abrir(galeria, i); gal.appendChild(b);
+  });
+  document.getElementById('img3d').style.backgroundImage = `url(renders/${galeria[1] ? galeria[1].arquivo : capa})`;
+
+  const abas = document.getElementById('abas'), pimg = document.getElementById('planta');
+  plantas.forEach((f, i) => {
+    const a = document.createElement('button'); a.className = 'aba'; a.role = 'tab'; a.textContent = /terreo/.test(f.arquivo) ? 'Térreo' : 'Pavimento superior';
+    a.onclick = () => { abas.querySelectorAll('.aba').forEach(x => x.setAttribute('aria-selected', x === a)); pimg.src = 'renders/' + f.arquivo; pimg.alt = f.titulo; pimg.onclick = () => abrir(plantas, i); };
+    abas.appendChild(a); if (!i) a.click();
+  });
+  if (!plantas.length) document.getElementById('plantas').remove();
+
+  /* tela cheia: setas, teclado e arrastar no celular */
+  const lb = document.getElementById('lb'), lbi = document.getElementById('lbi'), lbl = document.getElementById('lbl'), lbc = document.getElementById('lbc');
+  let lista = [], at = 0;
+  function mostra() { const f = lista[at]; lbi.src = 'renders/' + f.arquivo; lbl.textContent = tit(f); lbc.textContent = `${at + 1} / ${lista.length}`; }
+  function abrir(l, i) { lista = l; at = i; mostra(); lb.hidden = false; document.body.style.overflow = 'hidden'; }
+  function fecha() { lb.hidden = true; document.body.style.overflow = ''; }
+  const passo = d => { at = (at + d + lista.length) % lista.length; mostra(); };
+  lb.querySelector('.fe').onclick = fecha; lb.querySelector('.an').onclick = () => passo(-1); lb.querySelector('.pr').onclick = () => passo(1);
+  lb.addEventListener('click', e => { if (e.target === lb) fecha(); });
+  addEventListener('keydown', e => { if (lb.hidden) return; if (e.key === 'Escape') fecha(); if (e.key === 'ArrowLeft') passo(-1); if (e.key === 'ArrowRight') passo(1); });
+  let x0 = null; lb.addEventListener('touchstart', e => x0 = e.touches[0].clientX, {passive: true});
+  lb.addEventListener('touchend', e => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) passo(dx < 0 ? 1 : -1); x0 = null; });
+})();
+</script>
+</body>
+</html>

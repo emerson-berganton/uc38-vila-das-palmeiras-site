@@ -1,0 +1,44 @@
+# ==============================================================
+#  TEXTOS DO SITE — Sobrado UC 38
+#  Como editar: troque só o que vem DEPOIS dos dois-pontos.
+#  Linhas que começam com # são comentários e não aparecem.
+#  Para tirar um item, apague a linha. Para incluir, copie uma
+#  linha igual e mude o texto. Salve e rode: python publicar.py
+# ==============================================================
+
+# ---------- topo da página ----------
+etiqueta: Residencial Vila das Palmeiras · Americana-SP
+titulo: Sobrado Vila das Palmeiras
+subtitulo: Casa nova de 141 m² construídos, com 3 dormitórios sendo 2 suítes, sala com pé-direito duplo e área gourmet no quintal.
+endereco: Rua Dulcinéia Dias de Souza, 485 · Pacaembu, Americana-SP
+foto_capa: capa.jpg
+
+# ---------- números (valor | legenda) ----------
+numero: 141 m² | de área construída
+numero: 3 | dormitórios
+numero: 2 | suítes
+numero: 4 | banheiros com o lavabo
+
+# ---------- destaques (título | texto) ----------
+destaque: Sala com pé-direito duplo | Pano de vidro na altura dos dois pavimentos e escada vazada: muita luz natural no térreo.
+destaque: Duas suítes | Suítes com banheiro privativo e espaço para guarda-roupa; a suíte 1 tem varanda voltada para a rua.
+destaque: Área gourmet | Espaço gourmet integrado à cozinha e aberto para o quintal.
+destaque: Cozinha ampla | Espaço para bancada, ilha e mesa, com acesso direto à área gourmet.
+destaque: Garagem coberta | Garagem coberta, com lavanderia nos fundos e estendal descoberto.
+destaque: Projeto contemporâneo | Fachada de linhas retas, ambientes integrados e boa ventilação e iluminação natural.
+
+# ---------- seções ----------
+titulo_galeria: Conheça cada ambiente
+titulo_plantas: Plantas
+texto_plantas: Térreo social e de serviço; dormitórios no pavimento superior.
+titulo_3d: Passeie pela casa em 3D
+texto_3d: Gire, aproxime e entre nos ambientes da maquete navegável, no computador ou no celular.
+botao_3d: Abrir a maquete 3D
+
+# ---------- rodapé ----------
+aviso: Imagens meramente ilustrativas. Mobiliário, decoração, paisagismo, ofurô e eletrodomésticos não fazem parte da entrega. A casa é entregue sem armários planejados. Acabamentos, materiais e cores podem variar em relação às imagens.
+
+# ---------- legendas das fotos (arquivo | legenda) ----------
+# (opcional: se a foto não estiver aqui, usa o nome padrão)
+legenda: 01_esquina.jpg | Fachada na esquina ao fim de tarde
+legenda: 05_estar.jpg | Sala de estar com pé-direito duplo
